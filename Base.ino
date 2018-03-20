@@ -14,7 +14,7 @@ I2CEncoder Right_encoder;
 
 const int Right_Motor_Pin = 8;
 const int Left_Motor_Pin = 9;
-int mode =1;
+int mode =0;
 void setup() 
 {
   Wire.begin();        // Wire library required for I2CEncoder library
@@ -32,7 +32,7 @@ void loop()
 {
   switch(mode)
   {
-    case 1: //wall follow
+    case 0: //wall follow
   Right_Motor.writeMicroseconds(1600);      
   Left_Motor.writeMicroseconds(1600);
   }
