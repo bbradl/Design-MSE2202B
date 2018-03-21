@@ -32,7 +32,7 @@ void loop()
 {
   switch(mode)
   {
-    case 0: //wall follow
+    case 0: //basic drive test
   Right_Motor.writeMicroseconds(1600);      
   Left_Motor.writeMicroseconds(1600);
   }
